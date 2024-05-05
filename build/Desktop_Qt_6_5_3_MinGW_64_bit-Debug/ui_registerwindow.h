@@ -56,7 +56,7 @@ public:
     {
         if (RegisterWindow->objectName().isEmpty())
             RegisterWindow->setObjectName("RegisterWindow");
-        RegisterWindow->resize(351, 517);
+        RegisterWindow->resize(365, 517);
         label = new QLabel(RegisterWindow);
         label->setObjectName("label");
         label->setGeometry(QRect(10, 40, 81, 20));
@@ -72,9 +72,11 @@ public:
         RegisterPasswordLineEdit = new QLineEdit(RegisterWindow);
         RegisterPasswordLineEdit->setObjectName("RegisterPasswordLineEdit");
         RegisterPasswordLineEdit->setGeometry(QRect(100, 70, 141, 22));
+        RegisterPasswordLineEdit->setEchoMode(QLineEdit::Password);
         RetypeRegisterPasswordLineEdit = new QLineEdit(RegisterWindow);
         RetypeRegisterPasswordLineEdit->setObjectName("RetypeRegisterPasswordLineEdit");
         RetypeRegisterPasswordLineEdit->setGeometry(QRect(100, 100, 141, 22));
+        RetypeRegisterPasswordLineEdit->setEchoMode(QLineEdit::Password);
         ErrorExistingLabel = new QLabel(RegisterWindow);
         ErrorExistingLabel->setObjectName("ErrorExistingLabel");
         ErrorExistingLabel->setGeometry(QRect(260, 40, 91, 16));
@@ -107,10 +109,10 @@ public:
         pushButton->setGeometry(QRect(30, 400, 80, 31));
         RegisterPushButton = new QPushButton(RegisterWindow);
         RegisterPushButton->setObjectName("RegisterPushButton");
-        RegisterPushButton->setGeometry(QRect(230, 400, 80, 31));
+        RegisterPushButton->setGeometry(QRect(250, 400, 80, 31));
         ErrorCardNoLabel = new QLabel(RegisterWindow);
         ErrorCardNoLabel->setObjectName("ErrorCardNoLabel");
-        ErrorCardNoLabel->setGeometry(QRect(270, 240, 81, 16));
+        ErrorCardNoLabel->setGeometry(QRect(270, 270, 91, 16));
         ErrorCVVLabel = new QLabel(RegisterWindow);
         ErrorCVVLabel->setObjectName("ErrorCVVLabel");
         ErrorCVVLabel->setGeometry(QRect(270, 290, 81, 16));
@@ -152,7 +154,7 @@ public:
         YearLineEdit->setGeometry(QRect(150, 40, 61, 22));
         ErrorAgeLabel = new QLabel(RegisterWindow);
         ErrorAgeLabel->setObjectName("ErrorAgeLabel");
-        ErrorAgeLabel->setGeometry(QRect(240, 170, 101, 20));
+        ErrorAgeLabel->setGeometry(QRect(240, 170, 121, 20));
 
         retranslateUi(RegisterWindow);
 

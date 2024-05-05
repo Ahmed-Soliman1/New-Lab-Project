@@ -18,6 +18,8 @@ public:
 private slots:
     void on_RegisterPushButton_clicked();
 
+    void on_pushButton_clicked();
+
 private:
     Ui::RegisterWindow *ui;
 };

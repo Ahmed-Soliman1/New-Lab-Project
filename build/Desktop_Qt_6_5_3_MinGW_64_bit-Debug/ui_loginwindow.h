@@ -63,7 +63,7 @@ public:
         label_2->setGeometry(QRect(40, 100, 51, 16));
         LoginErrorLabel = new QLabel(centralwidget);
         LoginErrorLabel->setObjectName("LoginErrorLabel");
-        LoginErrorLabel->setGeometry(QRect(130, 160, 171, 16));
+        LoginErrorLabel->setGeometry(QRect(130, 160, 201, 16));
         LoginWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(LoginWindow);
         menubar->setObjectName("menubar");

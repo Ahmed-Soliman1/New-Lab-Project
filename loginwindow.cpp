@@ -42,6 +42,7 @@ void LoginWindow::on_LoginButton_clicked()
     if((!found) or(!flag)){
         ui->LoginErrorLabel->setVisible(true);
     }
+
 }
 
 

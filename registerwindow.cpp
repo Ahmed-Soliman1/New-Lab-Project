@@ -55,7 +55,7 @@ void RegisterWindow::on_RegisterPushButton_clicked()
 
 
 
-    if (RegisterAge < 12) {
+    if (RegisterAge < 18) {
         ageError=true;
     }
 
@@ -131,9 +131,18 @@ void RegisterWindow::on_RegisterPushButton_clicked()
 
 
 
-    //hide();
+
     hide();
     LoginWindow *loginwindow = new LoginWindow();
     loginwindow->show();
+}
+
+
+void RegisterWindow::on_pushButton_clicked()
+{
+    hide();
+    LoginWindow *loginwindow = new LoginWindow();
+    loginwindow->show();
+
 }
 
