@@ -127,6 +127,7 @@ void RegisterWindow::on_RegisterPushButton_clicked()
     CardName[usersCount-1] = UserEnteredCardName;
     CardNumber[usersCount-1]=UserEnteredCardNumber;
     CVV[usersCount-1]=UserEnteredCVV;
+    UserType[usersCount-1]=false;
     usersCount++;
 
 

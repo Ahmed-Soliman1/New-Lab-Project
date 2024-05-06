@@ -14,6 +14,18 @@ extern int usersCount;
 extern bool UserType[100];
 
 
+
+// class user
+
+//         derived; mno normal user admin
+
+
+//     when u need to delete the admin
+//     get orginal user
+
+
+
+
 namespace Ui {
 class Users;
 }

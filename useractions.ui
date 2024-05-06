@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Users</class>
- <widget class="QDialog" name="Users">
+ <class>userActions</class>
+ <widget class="QDialog" name="userActions">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -13,30 +13,30 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QLabel" name="label">
+  <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>30</y>
-     <width>271</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>hello normal user </string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="browseButton">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>200</y>
-     <width>151</width>
+     <x>230</x>
+     <y>210</y>
+     <width>100</width>
      <height>32</height>
     </rect>
    </property>
    <property name="text">
-    <string>browse products </string>
+    <string>browse</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>30</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>hello user</string>
    </property>
   </widget>
  </widget>

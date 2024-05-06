@@ -3,6 +3,8 @@
 #include "ui_loginwindow.h"
 #include "users.h"
 #include "registerwindow.h"
+#include"adminactions.h"
+#include"useractions.h"
 
 LoginWindow::LoginWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -33,8 +35,21 @@ void LoginWindow::on_LoginButton_clicked()
     bool flag=(UserEnteredPassword==passwords[index]);
     if(found){
         if(flag){
-            hide();
-            //Here add the next window if login is successful
+
+           /* if (UserType[index]){
+                hide();
+                adminActions * admin = new adminActions();
+                admin->show();
+            }
+
+            else */if (!UserType[index]){
+                userActions * user = new userActions();
+                user->show();
+
+            }
+
+
+             //Here add the next window if login is successful
 
 
         }
@@ -44,6 +59,10 @@ void LoginWindow::on_LoginButton_clicked()
     }
 
 }
+
+
+
+
 
 
 void LoginWindow::on_RegisterButton_clicked()
