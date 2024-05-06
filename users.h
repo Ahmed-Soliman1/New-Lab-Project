@@ -3,28 +3,17 @@
 
 #include <QDialog>
 #include <QString>
+#include <vector>
 
-extern QString usernames[100];
-extern QString passwords[100];
-extern QString CardName[100];
-extern QString CardNumber[100];
-extern QString CVV[100];
-extern int ages[100];
+extern std::vector<QString> usernames;
+extern std::vector<QString> passwords;
+extern std::vector<QString> CardName;
+extern std::vector<QString> CardNumber;
+extern std::vector<QString> CVV;
+extern std::vector<int> ages;
+extern std::vector<bool> UserType;
+
 extern int usersCount;
-extern bool UserType[100];
-
-
-
-// class user
-
-//         derived; mno normal user admin
-
-
-//     when u need to delete the admin
-//     get orginal user
-
-
-
 
 namespace Ui {
 class Users;

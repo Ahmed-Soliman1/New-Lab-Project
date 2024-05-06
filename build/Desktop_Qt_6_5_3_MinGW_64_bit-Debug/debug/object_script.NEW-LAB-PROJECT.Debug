@@ -1,0 +1,12 @@
+debug/adminactions.o
+debug/main.o
+debug/loginwindow.o
+debug/objects.o
+debug/registerwindow.o
+debug/useractions.o
+debug/users.o
+debug/moc_adminactions.o
+debug/moc_loginwindow.o
+debug/moc_registerwindow.o
+debug/moc_useractions.o
+debug/moc_users.o

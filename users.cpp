@@ -1,14 +1,13 @@
 #include "users.h"
 #include "ui_users.h"
 
-QString usernames[100] = {"admin", "test", "user1", "user2"};
-QString passwords[100] = {"admin", "1234", "1101", "1102"};
-QString CardName[100] = {"Abdelrahman Amer","Ahmed Amgad","Adham","Zeyad Maher"};
-QString CardNumber[100] = {"1234567891011234","1234567891011432","1234567891011342","2345678888888129"};
-QString CVV[100] = {"123","132","213","231"};
-
-bool UserType[100] = {true, false, false, true}; // 1 represents admin, 0 represents regular user
-int ages[100] = {20, 21, 22, 23};
+std::vector<QString> usernames = {"admin", "test", "user1", "user2"};
+std::vector<QString> passwords = {"admin", "1234", "1101", "1102"};
+std::vector<QString> CardName = {"Abdelrahman Amer", "Ahmed Amgad", "Adham", "Zeyad Maher"};
+std::vector<QString> CardNumber = {"1234567891011234", "1234567891011432", "1234567891011342", "2345678888888129"};
+std::vector<QString> CVV = {"123", "132", "213", "231"};
+std::vector<bool> UserType = {true, false, false, true}; // 1 represents admin, 0 represents regular user
+std::vector<int> ages = {20, 21, 22, 23};
 int usersCount = 4;
 
 Users::Users(QWidget *parent)

@@ -12,18 +12,28 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QPushButton>
 
 QT_BEGIN_NAMESPACE
 
 class Ui_Users
 {
 public:
+    QLabel *label;
+    QPushButton *browseButton;
 
     void setupUi(QDialog *Users)
     {
         if (Users->objectName().isEmpty())
             Users->setObjectName("Users");
         Users->resize(400, 300);
+        label = new QLabel(Users);
+        label->setObjectName("label");
+        label->setGeometry(QRect(0, 30, 271, 31));
+        browseButton = new QPushButton(Users);
+        browseButton->setObjectName("browseButton");
+        browseButton->setGeometry(QRect(30, 200, 151, 32));
 
         retranslateUi(Users);
 
@@ -33,6 +43,8 @@ public:
     void retranslateUi(QDialog *Users)
     {
         Users->setWindowTitle(QCoreApplication::translate("Users", "Dialog", nullptr));
+        label->setText(QCoreApplication::translate("Users", "hello normal user ", nullptr));
+        browseButton->setText(QCoreApplication::translate("Users", "browse products ", nullptr));
     } // retranslateUi
 
 };

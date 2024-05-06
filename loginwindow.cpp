@@ -36,13 +36,13 @@ void LoginWindow::on_LoginButton_clicked()
     if(found){
         if(flag){
 
-           /* if (UserType[index]){
+           if (UserType[index]){
                 hide();
-                adminActions * admin = new adminActions();
+                adminactions * admin = new adminactions();
                 admin->show();
             }
 
-            else */if (!UserType[index]){
+            else if (!UserType[index]){
                 userActions * user = new userActions();
                 user->show();
 
