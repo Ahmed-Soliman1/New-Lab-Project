@@ -43,7 +43,8 @@ void LoginWindow::on_LoginButton_clicked()
             }
 
             else if (!UserType[index]){
-                userActions * user = new userActions();
+               hide();
+               userActions * user = new userActions();
                 user->show();
 
             }
@@ -70,5 +71,22 @@ void LoginWindow::on_RegisterButton_clicked()
     hide();
     RegisterWindow* registerwindow=new RegisterWindow(this);
     registerwindow->show();
+}
+
+
+void LoginWindow::on_pushButton_clicked()
+{
+    hide();
+    adminactions * admin = new adminactions();
+    admin->show();
+}
+
+
+
+void LoginWindow::on_pushButton_2_clicked()
+{
+    hide();
+    userActions * user = new userActions();
+    user->show();
 }
 

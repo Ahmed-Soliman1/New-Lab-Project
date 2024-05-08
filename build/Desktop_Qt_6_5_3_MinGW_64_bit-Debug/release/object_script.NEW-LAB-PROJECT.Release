@@ -1,12 +1,16 @@
 release/adminactions.o
+release/fileio.o
 release/main.o
 release/loginwindow.o
 release/objects.o
+release/productmanagement.o
 release/registerwindow.o
 release/useractions.o
 release/users.o
+release/qrc_res.o
 release/moc_adminactions.o
 release/moc_loginwindow.o
+release/moc_productmanagement.o
 release/moc_registerwindow.o
 release/moc_useractions.o
 release/moc_users.o

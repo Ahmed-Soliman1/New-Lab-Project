@@ -10,17 +10,21 @@ CONFIG += c++17
 
 SOURCES += \
     adminactions.cpp \
+    fileio.cpp \
     main.cpp \
     loginwindow.cpp \
     objects.cpp \
+    productmanagement.cpp \
     registerwindow.cpp \
     useractions.cpp \
     users.cpp
 
 HEADERS += \
     adminactions.h \
+    fileio.h \
     loginwindow.h \
     objects.h \
+    productmanagement.h \
     registerwindow.h \
     useractions.h \
     users.h
@@ -28,6 +32,7 @@ HEADERS += \
 FORMS += \
     adminactions.ui \
     loginwindow.ui \
+    productmanagement.ui \
     registerwindow.ui \
     useractions.ui \
     users.ui
@@ -36,3 +41,6 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    res.qrc

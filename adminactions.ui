@@ -13,30 +13,56 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QPushButton" name="add">
+  <widget class="QPushButton" name="UserManagementPushButton">
    <property name="geometry">
     <rect>
-     <x>270</x>
-     <y>210</y>
-     <width>100</width>
-     <height>32</height>
+     <x>260</x>
+     <y>230</y>
+     <width>111</width>
+     <height>41</height>
     </rect>
    </property>
    <property name="text">
-    <string>add product</string>
+    <string>User Management</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="LogoutAdminPushButton">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>220</y>
+     <x>20</x>
+     <y>20</y>
      <width>121</width>
      <height>32</height>
     </rect>
    </property>
    <property name="text">
-    <string>delete product</string>
+    <string>Logout</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ImageLabel">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>90</y>
+     <width>191</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ProductManagementPushButton">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>230</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Product Management</string>
    </property>
   </widget>
  </widget>

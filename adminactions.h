@@ -13,7 +13,11 @@ class adminactions : public QDialog
 
 public:
     explicit adminactions(QWidget *parent = nullptr);
+
     ~adminactions();
+
+private slots:
+    void on_UserManagementPushButton_clicked();
 
 private:
     Ui::adminactions *ui;

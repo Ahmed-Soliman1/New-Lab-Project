@@ -27,7 +27,11 @@ public:
     explicit Users(QWidget *parent = nullptr);
     ~Users();
 
+private slots:
+    void removeUser();
+
 private:
+    void populateTable();
     Ui::Users *ui;
 };
 

@@ -12,28 +12,33 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
-#include <QtWidgets/QLabel>
+#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QTableWidget>
 
 QT_BEGIN_NAMESPACE
 
 class Ui_Users
 {
 public:
-    QLabel *label;
     QPushButton *browseButton;
+    QTableWidget *userTableWidget;
+    QPushButton *removeUserButton;
 
     void setupUi(QDialog *Users)
     {
         if (Users->objectName().isEmpty())
             Users->setObjectName("Users");
-        Users->resize(400, 300);
-        label = new QLabel(Users);
-        label->setObjectName("label");
-        label->setGeometry(QRect(0, 30, 271, 31));
+        Users->resize(637, 483);
         browseButton = new QPushButton(Users);
         browseButton->setObjectName("browseButton");
-        browseButton->setGeometry(QRect(30, 200, 151, 32));
+        browseButton->setGeometry(QRect(60, 410, 151, 32));
+        userTableWidget = new QTableWidget(Users);
+        userTableWidget->setObjectName("userTableWidget");
+        userTableWidget->setGeometry(QRect(50, 40, 531, 311));
+        removeUserButton = new QPushButton(Users);
+        removeUserButton->setObjectName("removeUserButton");
+        removeUserButton->setGeometry(QRect(450, 420, 80, 21));
 
         retranslateUi(Users);
 
@@ -43,8 +48,8 @@ public:
     void retranslateUi(QDialog *Users)
     {
         Users->setWindowTitle(QCoreApplication::translate("Users", "Dialog", nullptr));
-        label->setText(QCoreApplication::translate("Users", "hello normal user ", nullptr));
         browseButton->setText(QCoreApplication::translate("Users", "browse products ", nullptr));
+        removeUserButton->setText(QCoreApplication::translate("Users", "Remove", nullptr));
     } // retranslateUi
 
 };
